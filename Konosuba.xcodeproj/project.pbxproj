@@ -177,8 +177,8 @@
 			buildPhases = (
 				F5E64D0D11D0E9DF6284A3AA /* [CP] Check Pods Manifest.lock */,
 				86726D0E661E80A63E84D525 /* [CP-User] 1. SwiftFormat */,
-				9BE8C3AF9B4C48C2834AAC38 /* [CP-User] 2. R.swift */,
-				667AC21541D3CF787A4D335E /* [CP-User] 3. SwiftLint */,
+				8B4CE620D99B2AA959174099 /* [CP-User] 2. SwiftLint */,
+				811057CC11475C090ACCA073 /* [CP-User] 3. R.swift */,
 				E5773FD221BB9B1300653E6B /* Sources */,
 				E5773FD321BB9B1300653E6B /* Frameworks */,
 				E5773FD421BB9B1300653E6B /* Resources */,
@@ -352,7 +352,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Konosuba/Pods-Konosuba-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		667AC21541D3CF787A4D335E /* [CP-User] 3. SwiftLint */ = {
+		811057CC11475C090ACCA073 /* [CP-User] 3. R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,14 +361,14 @@
 			);
 			inputPaths = (
 			);
-			name = "[CP-User] 3. SwiftLint";
+			name = "[CP-User] 3. R.swift";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
 			showEnvVarsInLog = 0;
 		};
 		86726D0E661E80A63E84D525 /* [CP-User] 1. SwiftFormat */ = {
@@ -390,7 +390,7 @@
 			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"${SRCROOT}\"";
 			showEnvVarsInLog = 0;
 		};
-		9BE8C3AF9B4C48C2834AAC38 /* [CP-User] 2. R.swift */ = {
+		8B4CE620D99B2AA959174099 /* [CP-User] 2. SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,14 +399,14 @@
 			);
 			inputPaths = (
 			);
-			name = "[CP-User] 2. R.swift";
+			name = "[CP-User] 2. SwiftLint";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 			showEnvVarsInLog = 0;
 		};
 		B6DBFAD5823EFE72172B112B /* [CP] Check Pods Manifest.lock */ = {
