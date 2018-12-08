@@ -2,6 +2,9 @@
 .bundle
 vendor/bundle
 
+# Cocoapods
+Pods
+
 # Copy from:
 # https://github.com/github/gitignore/blob/master/Global/Xcode.gitignore
 

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1A623C350A787878C269B6 /* Pods_Konosuba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFE56591A056DB7FDC512A6 /* Pods_Konosuba.framework */; };
+		B44F07F51B25803D04C58F03 /* Pods_KonosubaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D0A8CBF0400A933805588B /* Pods_KonosubaTests.framework */; };
+		E3A015039AC756747FD141A4 /* Pods_KonosubaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6FE842CB6D0BA69A14EEB /* Pods_KonosubaUITests.framework */; };
 		E5773FDA21BB9B1300653E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5773FD921BB9B1300653E6B /* AppDelegate.swift */; };
 		E5773FDC21BB9B1300653E6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5773FDB21BB9B1300653E6B /* ViewController.swift */; };
 		E5773FDF21BB9B1300653E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5773FDD21BB9B1300653E6B /* Main.storyboard */; };
@@ -34,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03C3A9DBB2D79D658965B5D2 /* Pods-KonosubaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KonosubaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KonosubaTests/Pods-KonosubaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		11A6FE842CB6D0BA69A14EEB /* Pods_KonosubaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KonosubaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B4C6BEF0D5AC5DD6D5E171 /* Pods-Konosuba.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Konosuba.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Konosuba/Pods-Konosuba.debug.xcconfig"; sourceTree = "<group>"; };
+		48830E058BEC515843D6E6F0 /* Pods-KonosubaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KonosubaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KonosubaUITests/Pods-KonosubaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4AFE56591A056DB7FDC512A6 /* Pods_Konosuba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Konosuba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97D0A8CBF0400A933805588B /* Pods_KonosubaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KonosubaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03655E0EC120DA64B081509 /* Pods-Konosuba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Konosuba.release.xcconfig"; path = "Pods/Target Support Files/Pods-Konosuba/Pods-Konosuba.release.xcconfig"; sourceTree = "<group>"; };
 		E5773FD621BB9B1300653E6B /* Konosuba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konosuba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5773FD921BB9B1300653E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5773FDB21BB9B1300653E6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,8 @@
 		E5773FF521BB9B1400653E6B /* KonosubaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KonosubaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5773FF921BB9B1400653E6B /* KonosubaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonosubaUITests.swift; sourceTree = "<group>"; };
 		E5773FFB21BB9B1400653E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7BA8973549CB3930CD46D8F /* Pods-KonosubaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KonosubaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KonosubaTests/Pods-KonosubaTests.release.xcconfig"; sourceTree = "<group>"; };
+		F832DAFF1143436E24C20C72 /* Pods-KonosubaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KonosubaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KonosubaUITests/Pods-KonosubaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1A623C350A787878C269B6 /* Pods_Konosuba.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B44F07F51B25803D04C58F03 /* Pods_KonosubaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A015039AC756747FD141A4 /* Pods_KonosubaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4BFC0BD42A97480292D3D6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AFE56591A056DB7FDC512A6 /* Pods_Konosuba.framework */,
+				97D0A8CBF0400A933805588B /* Pods_KonosubaTests.framework */,
+				11A6FE842CB6D0BA69A14EEB /* Pods_KonosubaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0E9F71B5CE0320A8F5DF99B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25B4C6BEF0D5AC5DD6D5E171 /* Pods-Konosuba.debug.xcconfig */,
+				D03655E0EC120DA64B081509 /* Pods-Konosuba.release.xcconfig */,
+				03C3A9DBB2D79D658965B5D2 /* Pods-KonosubaTests.debug.xcconfig */,
+				F7BA8973549CB3930CD46D8F /* Pods-KonosubaTests.release.xcconfig */,
+				F832DAFF1143436E24C20C72 /* Pods-KonosubaUITests.debug.xcconfig */,
+				48830E058BEC515843D6E6F0 /* Pods-KonosubaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E5773FCD21BB9B1300653E6B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				E5773FED21BB9B1400653E6B /* KonosubaTests */,
 				E5773FF821BB9B1400653E6B /* KonosubaUITests */,
 				E5773FD721BB9B1300653E6B /* Products */,
+				E0E9F71B5CE0320A8F5DF99B /* Pods */,
+				B4BFC0BD42A97480292D3D6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5773FFE21BB9B1400653E6B /* Build configuration list for PBXNativeTarget "Konosuba" */;
 			buildPhases = (
+				F5E64D0D11D0E9DF6284A3AA /* [CP] Check Pods Manifest.lock */,
 				E5773FD221BB9B1300653E6B /* Sources */,
 				E5773FD321BB9B1300653E6B /* Frameworks */,
 				E5773FD421BB9B1300653E6B /* Resources */,
+				510FB01590748D0B4EFD3A9C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E577400121BB9B1400653E6B /* Build configuration list for PBXNativeTarget "KonosubaTests" */;
 			buildPhases = (
+				B6DBFAD5823EFE72172B112B /* [CP] Check Pods Manifest.lock */,
 				E5773FE621BB9B1400653E6B /* Sources */,
 				E5773FE721BB9B1400653E6B /* Frameworks */,
 				E5773FE821BB9B1400653E6B /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E577400421BB9B1400653E6B /* Build configuration list for PBXNativeTarget "KonosubaUITests" */;
 			buildPhases = (
+				0878EED81F6899DD803287ED /* [CP] Check Pods Manifest.lock */,
 				E5773FF121BB9B1400653E6B /* Sources */,
 				E5773FF221BB9B1400653E6B /* Frameworks */,
 				E5773FF321BB9B1400653E6B /* Resources */,
@@ -250,6 +294,101 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0878EED81F6899DD803287ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KonosubaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		510FB01590748D0B4EFD3A9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Konosuba/Pods-Konosuba-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Konosuba/Pods-Konosuba-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6DBFAD5823EFE72172B112B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KonosubaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5E64D0D11D0E9DF6284A3AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Konosuba-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E5773FD221BB9B1300653E6B /* Sources */ = {
@@ -430,6 +569,7 @@
 		};
 		E5773FFF21BB9B1400653E6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25B4C6BEF0D5AC5DD6D5E171 /* Pods-Konosuba.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +588,7 @@
 		};
 		E577400021BB9B1400653E6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03655E0EC120DA64B081509 /* Pods-Konosuba.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +607,7 @@
 		};
 		E577400221BB9B1400653E6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03C3A9DBB2D79D658965B5D2 /* Pods-KonosubaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +629,7 @@
 		};
 		E577400321BB9B1400653E6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7BA8973549CB3930CD46D8F /* Pods-KonosubaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +651,7 @@
 		};
 		E577400521BB9B1400653E6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F832DAFF1143436E24C20C72 /* Pods-KonosubaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +672,7 @@
 		};
 		E577400621BB9B1400653E6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48830E058BEC515843D6E6F0 /* Pods-KonosubaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
