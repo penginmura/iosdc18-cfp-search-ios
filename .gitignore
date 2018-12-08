@@ -1,3 +1,6 @@
+# bundler
+.bundle
+vendor/bundle
 
 # Copy from:
 # https://github.com/github/gitignore/blob/master/Global/Xcode.gitignore
