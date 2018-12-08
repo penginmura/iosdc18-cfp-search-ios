@@ -177,8 +177,8 @@
 			buildPhases = (
 				F5E64D0D11D0E9DF6284A3AA /* [CP] Check Pods Manifest.lock */,
 				86726D0E661E80A63E84D525 /* [CP-User] 1. SwiftFormat */,
-				21BC3E778C9EF79C4021D2C8 /* [CP-User] 2. SwiftLint */,
-				A7B53EF62EF39AA6C90276FE /* [CP-User] 3. R.swift */,
+				9BE8C3AF9B4C48C2834AAC38 /* [CP-User] 2. R.swift */,
+				667AC21541D3CF787A4D335E /* [CP-User] 3. SwiftLint */,
 				E5773FD221BB9B1300653E6B /* Sources */,
 				E5773FD321BB9B1300653E6B /* Frameworks */,
 				E5773FD421BB9B1300653E6B /* Resources */,
@@ -324,25 +324,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		21BC3E778C9EF79C4021D2C8 /* [CP-User] 2. SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP-User] 2. SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
-			showEnvVarsInLog = 0;
-		};
 		510FB01590748D0B4EFD3A9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +352,25 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Konosuba/Pods-Konosuba-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		667AC21541D3CF787A4D335E /* [CP-User] 3. SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] 3. SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+			showEnvVarsInLog = 0;
+		};
 		86726D0E661E80A63E84D525 /* [CP-User] 1. SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,7 +390,7 @@
 			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"${SRCROOT}\"";
 			showEnvVarsInLog = 0;
 		};
-		A7B53EF62EF39AA6C90276FE /* [CP-User] 3. R.swift */ = {
+		9BE8C3AF9B4C48C2834AAC38 /* [CP-User] 2. R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,7 +399,7 @@
 			);
 			inputPaths = (
 			);
-			name = "[CP-User] 3. R.swift";
+			name = "[CP-User] 2. R.swift";
 			outputFileListPaths = (
 			);
 			outputPaths = (

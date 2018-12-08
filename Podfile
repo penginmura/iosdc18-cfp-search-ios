@@ -21,12 +21,12 @@ target 'Konosuba' do
                :script => '"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat" "${SRCROOT}"',
                :execution_position => :before_compile
 
-  script_phase :name => '2. SwiftLint',
-               :script => '"${PODS_ROOT}/SwiftLint/swiftlint"',
+  script_phase :name => '2. R.swift',
+               :script => '"$PODS_ROOT/R.swift/rswift" generate "$SRCROOT"',
                :execution_position => :before_compile
 
-  script_phase :name => '3. R.swift',
-               :script => '"$PODS_ROOT/R.swift/rswift" generate "$SRCROOT"',
+  script_phase :name => '3. SwiftLint',
+               :script => '"${PODS_ROOT}/SwiftLint/swiftlint"',
                :execution_position => :before_compile
 
   target 'KonosubaTests' do
