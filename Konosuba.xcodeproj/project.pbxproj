@@ -176,9 +176,9 @@
 			buildConfigurationList = E5773FFE21BB9B1400653E6B /* Build configuration list for PBXNativeTarget "Konosuba" */;
 			buildPhases = (
 				F5E64D0D11D0E9DF6284A3AA /* [CP] Check Pods Manifest.lock */,
-				86726D0E661E80A63E84D525 /* [CP-User] 1. SwiftFormat */,
-				8B4CE620D99B2AA959174099 /* [CP-User] 2. SwiftLint */,
-				811057CC11475C090ACCA073 /* [CP-User] 3. R.swift */,
+				16E461510E72277D9F43DC8D /* [CP-User] 1. R.swift */,
+				C1A006C5E95E07CD0C1BA633 /* [CP-User] 2. SwiftFormat */,
+				611AE22094C74A80F6529D32 /* [CP-User] 3. SwiftLint */,
 				E5773FD221BB9B1300653E6B /* Sources */,
 				E5773FD321BB9B1300653E6B /* Frameworks */,
 				E5773FD421BB9B1300653E6B /* Resources */,
@@ -324,6 +324,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		16E461510E72277D9F43DC8D /* [CP-User] 1. R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] 1. R.swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+			showEnvVarsInLog = 0;
+		};
 		510FB01590748D0B4EFD3A9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -352,7 +371,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Konosuba/Pods-Konosuba-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		811057CC11475C090ACCA073 /* [CP-User] 3. R.swift */ = {
+		611AE22094C74A80F6529D32 /* [CP-User] 3. SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,45 +380,7 @@
 			);
 			inputPaths = (
 			);
-			name = "[CP-User] 3. R.swift";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
-			showEnvVarsInLog = 0;
-		};
-		86726D0E661E80A63E84D525 /* [CP-User] 1. SwiftFormat */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP-User] 1. SwiftFormat";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"${SRCROOT}\"";
-			showEnvVarsInLog = 0;
-		};
-		8B4CE620D99B2AA959174099 /* [CP-User] 2. SwiftLint */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP-User] 2. SwiftLint";
+			name = "[CP-User] 3. SwiftLint";
 			outputFileListPaths = (
 			);
 			outputPaths = (
@@ -429,6 +410,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1A006C5E95E07CD0C1BA633 /* [CP-User] 2. SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] 2. SwiftFormat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"${SRCROOT}\"";
 			showEnvVarsInLog = 0;
 		};
 		F5E64D0D11D0E9DF6284A3AA /* [CP] Check Pods Manifest.lock */ = {
