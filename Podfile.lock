@@ -1,4 +1,7 @@
 PODS:
+  - R.swift (5.0.0.alpha.2):
+    - R.swift.Library (~> 5.0.0.alpha.2)
+  - R.swift.Library (5.0.0.alpha.2)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
@@ -7,23 +10,28 @@ PODS:
   - SwiftFormat/CLI (0.35.9)
 
 DEPENDENCIES:
+  - R.swift (= 5.0.0.alpha.2)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - SwiftFormat/CLI
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - R.swift
+    - R.swift.Library
     - RxAtomic
     - RxCocoa
     - RxSwift
     - SwiftFormat
 
 SPEC CHECKSUMS:
+  R.swift: 31fa1bd537fa81307815cc622122f33331f32174
+  R.swift.Library: 3c21b823839bf5a6769dc7f96cb44479dab51b1b
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SwiftFormat: f1cf26ab5ce1f59aeaee018edc7e6d88e05bfb39
 
-PODFILE CHECKSUM: d6a9023e76067fcb36538585dd46225ab8c2ccc9
+PODFILE CHECKSUM: 0806f6ab65226b5de8492c8c1ce7576e98f5f117
 
 COCOAPODS: 1.5.3

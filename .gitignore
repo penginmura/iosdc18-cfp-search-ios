@@ -9,6 +9,9 @@ Pods
 fastlane/test_output
 fastlane/report.xml
 
+# R.swift
+R.generated.swift
+
 # Copy from:
 # https://github.com/github/gitignore/blob/master/Global/Xcode.gitignore
 
