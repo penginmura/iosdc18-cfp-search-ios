@@ -173,6 +173,7 @@
 			buildConfigurationList = E5773FFE21BB9B1400653E6B /* Build configuration list for PBXNativeTarget "Konosuba" */;
 			buildPhases = (
 				F5E64D0D11D0E9DF6284A3AA /* [CP] Check Pods Manifest.lock */,
+				86726D0E661E80A63E84D525 /* [CP-User] 1. SwiftFormat */,
 				E5773FD221BB9B1300653E6B /* Sources */,
 				E5773FD321BB9B1300653E6B /* Frameworks */,
 				E5773FD421BB9B1300653E6B /* Resources */,
@@ -342,6 +343,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Konosuba/Pods-Konosuba-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86726D0E661E80A63E84D525 /* [CP-User] 1. SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] 1. SwiftFormat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"${SRCROOT}\"";
 			showEnvVarsInLog = 0;
 		};
 		B6DBFAD5823EFE72172B112B /* [CP] Check Pods Manifest.lock */ = {
