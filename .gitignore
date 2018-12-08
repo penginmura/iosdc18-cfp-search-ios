@@ -5,6 +5,10 @@ vendor/bundle
 # Cocoapods
 Pods
 
+# fastlane
+fastlane/test_output
+fastlane/report.xml
+
 # Copy from:
 # https://github.com/github/gitignore/blob/master/Global/Xcode.gitignore
 
