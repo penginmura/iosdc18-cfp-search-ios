@@ -17,7 +17,7 @@
 		E5773FE421BB9B1400653E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5773FE221BB9B1400653E6B /* LaunchScreen.storyboard */; };
 		E5773FEF21BB9B1400653E6B /* KonosubaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5773FEE21BB9B1400653E6B /* KonosubaTests.swift */; };
 		E5773FFA21BB9B1400653E6B /* KonosubaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5773FF921BB9B1400653E6B /* KonosubaUITests.swift */; };
-		E59ECB3921BBA4F900641CAE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59ECB3821BBA4F900641CAE /* R.generated.swift */; };
+		E59ECB3B21BBA67400641CAE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59ECB3A21BBA67400641CAE /* R.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +58,7 @@
 		E5773FF521BB9B1400653E6B /* KonosubaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KonosubaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5773FF921BB9B1400653E6B /* KonosubaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonosubaUITests.swift; sourceTree = "<group>"; };
 		E5773FFB21BB9B1400653E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E59ECB3821BBA4F900641CAE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		E59ECB3A21BBA67400641CAE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		F7BA8973549CB3930CD46D8F /* Pods-KonosubaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KonosubaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KonosubaTests/Pods-KonosubaTests.release.xcconfig"; sourceTree = "<group>"; };
 		F832DAFF1143436E24C20C72 /* Pods-KonosubaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KonosubaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KonosubaUITests/Pods-KonosubaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +123,7 @@
 				E5773FD721BB9B1300653E6B /* Products */,
 				E0E9F71B5CE0320A8F5DF99B /* Pods */,
 				B4BFC0BD42A97480292D3D6B /* Frameworks */,
+				E59ECB3A21BBA67400641CAE /* R.generated.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,7 +140,6 @@
 		E5773FD821BB9B1300653E6B /* Konosuba */ = {
 			isa = PBXGroup;
 			children = (
-				E59ECB3821BBA4F900641CAE /* R.generated.swift */,
 				E5773FD921BB9B1300653E6B /* AppDelegate.swift */,
 				E5773FDB21BB9B1300653E6B /* ViewController.swift */,
 				E5773FDD21BB9B1300653E6B /* Main.storyboard */,
@@ -177,7 +177,8 @@
 			buildPhases = (
 				F5E64D0D11D0E9DF6284A3AA /* [CP] Check Pods Manifest.lock */,
 				86726D0E661E80A63E84D525 /* [CP-User] 1. SwiftFormat */,
-				CB8AAB9E4A8598B5E46098CB /* [CP-User] 2. R.swift */,
+				21BC3E778C9EF79C4021D2C8 /* [CP-User] 2. SwiftLint */,
+				A7B53EF62EF39AA6C90276FE /* [CP-User] 3. R.swift */,
 				E5773FD221BB9B1300653E6B /* Sources */,
 				E5773FD321BB9B1300653E6B /* Frameworks */,
 				E5773FD421BB9B1300653E6B /* Resources */,
@@ -323,6 +324,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		21BC3E778C9EF79C4021D2C8 /* [CP-User] 2. SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] 2. SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
+			showEnvVarsInLog = 0;
+		};
 		510FB01590748D0B4EFD3A9C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +390,25 @@
 			shellScript = "\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"${SRCROOT}\"";
 			showEnvVarsInLog = 0;
 		};
+		A7B53EF62EF39AA6C90276FE /* [CP-User] 3. R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] 3. R.swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
+			showEnvVarsInLog = 0;
+		};
 		B6DBFAD5823EFE72172B112B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,25 +429,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CB8AAB9E4A8598B5E46098CB /* [CP-User] 2. R.swift */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP-User] 2. R.swift";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT\"";
 			showEnvVarsInLog = 0;
 		};
 		F5E64D0D11D0E9DF6284A3AA /* [CP] Check Pods Manifest.lock */ = {
@@ -442,7 +462,7 @@
 			files = (
 				E5773FDC21BB9B1300653E6B /* ViewController.swift in Sources */,
 				E5773FDA21BB9B1300653E6B /* AppDelegate.swift in Sources */,
-				E59ECB3921BBA4F900641CAE /* R.generated.swift in Sources */,
+				E59ECB3B21BBA67400641CAE /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
