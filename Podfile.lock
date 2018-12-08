@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.8.0)
   - Firebase/Auth (5.13.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.0.5)
@@ -70,6 +71,7 @@ PODS:
   - SwiftLint (0.29.1)
 
 DEPENDENCIES:
+  - Alamofire
   - Firebase/Auth
   - Firebase/Core
   - R.swift (= 5.0.0.alpha.2)
@@ -80,6 +82,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -99,6 +102,7 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   Firebase: 6df9a6114bc9f106a98fe83d5438d4d9833c2019
   FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
   FirebaseAuth: 9299ab178271bec7426967b05b2718bb6fc31f17
@@ -117,6 +121,6 @@ SPEC CHECKSUMS:
   SwiftFormat: f1cf26ab5ce1f59aeaee018edc7e6d88e05bfb39
   SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
 
-PODFILE CHECKSUM: 62a9620fed2b0d539a983c35599bd401bbcaf5b5
+PODFILE CHECKSUM: e93996d410234d8f94a88357dccdfaee36893ab4
 
 COCOAPODS: 1.5.3
