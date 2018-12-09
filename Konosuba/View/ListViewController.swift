@@ -33,14 +33,9 @@ final class ListViewController: UIViewController, StoryboardView {
             }
             .disposed(by: disposeBag)
 
-        reactor.state.map { $0.isLoading }
-            .subscribe(onNext: {
-                if $0 {
-                    SVProgressHUD.show()
-                } else {
-                    SVProgressHUD.dismiss()
-                }
-            })
+        reactor.state
+            .map { $0.isLoading }
+            .bind(to: SVProgressHUD.rx.visible)
             .disposed(by: disposeBag)
     }
 }

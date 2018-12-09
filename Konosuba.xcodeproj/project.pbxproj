@@ -17,6 +17,7 @@
 		E5773FE421BB9B1400653E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5773FE221BB9B1400653E6B /* LaunchScreen.storyboard */; };
 		E5773FEF21BB9B1400653E6B /* KonosubaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5773FEE21BB9B1400653E6B /* KonosubaTests.swift */; };
 		E5773FFA21BB9B1400653E6B /* KonosubaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5773FF921BB9B1400653E6B /* KonosubaUITests.swift */; };
+		E588606221BD7E6300D4694C /* SVProgressHUD+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E588606121BD7E6300D4694C /* SVProgressHUD+Rx.swift */; };
 		E59ECB3B21BBA67400641CAE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59ECB3A21BBA67400641CAE /* R.generated.swift */; };
 		E5C60CD521BD3D9900A5CBE4 /* ListViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C60CD421BD3D9900A5CBE4 /* ListViewReactor.swift */; };
 		E5C60CD821BD430400A5CBE4 /* Proposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C60CD721BD430400A5CBE4 /* Proposal.swift */; };
@@ -60,6 +61,7 @@
 		E5773FF521BB9B1400653E6B /* KonosubaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KonosubaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5773FF921BB9B1400653E6B /* KonosubaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonosubaUITests.swift; sourceTree = "<group>"; };
 		E5773FFB21BB9B1400653E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E588606121BD7E6300D4694C /* SVProgressHUD+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+Rx.swift"; sourceTree = "<group>"; };
 		E59ECB3A21BBA67400641CAE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		E5C60CD421BD3D9900A5CBE4 /* ListViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewReactor.swift; sourceTree = "<group>"; };
 		E5C60CD721BD430400A5CBE4 /* Proposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposal.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		E5773FD821BB9B1300653E6B /* Konosuba */ = {
 			isa = PBXGroup;
 			children = (
+				E588606021BD7E3F00D4694C /* Extension */,
 				E5C60CD321BD37AB00A5CBE4 /* View */,
 				E5C60CD621BD42F200A5CBE4 /* Entity */,
 				E5773FD921BB9B1300653E6B /* AppDelegate.swift */,
@@ -171,6 +174,14 @@
 				E5773FFB21BB9B1400653E6B /* Info.plist */,
 			);
 			path = KonosubaUITests;
+			sourceTree = "<group>";
+		};
+		E588606021BD7E3F00D4694C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E588606121BD7E6300D4694C /* SVProgressHUD+Rx.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		E5C60CD321BD37AB00A5CBE4 /* View */ = {
@@ -499,6 +510,7 @@
 				E5773FDA21BB9B1300653E6B /* AppDelegate.swift in Sources */,
 				E59ECB3B21BBA67400641CAE /* R.generated.swift in Sources */,
 				E5C60CD521BD3D9900A5CBE4 /* ListViewReactor.swift in Sources */,
+				E588606221BD7E6300D4694C /* SVProgressHUD+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
