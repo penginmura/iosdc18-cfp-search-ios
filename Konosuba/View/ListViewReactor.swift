@@ -17,6 +17,7 @@ final class ListViewReactor: Reactor {
 
     enum Mutation {
         case updateList([Proposal])
+        case setLoading(Bool)
     }
 
     struct State {
@@ -33,8 +34,11 @@ final class ListViewReactor: Reactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case .refresh:
-            return search()
-                .map { Mutation.updateList($0) } // TODO: 通信中のインジケータを表示したい
+            return Observable.concat([
+                Observable.just(Mutation.setLoading(true)),
+                search().map { Mutation.updateList($0) },
+                Observable.just(Mutation.setLoading(false)),
+            ])
         }
     }
 
@@ -43,6 +47,8 @@ final class ListViewReactor: Reactor {
         switch mutation {
         case let .updateList(items):
             state.proposals = items
+        case let .setLoading(loading):
+            state.isLoading = loading
         }
         return state
     }

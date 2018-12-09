@@ -9,6 +9,7 @@
 import ReactorKit
 import RxCocoa
 import RxSwift
+import SVProgressHUD
 import UIKit
 
 final class ListViewController: UIViewController, StoryboardView {
@@ -30,6 +31,16 @@ final class ListViewController: UIViewController, StoryboardView {
                 cell.textLabel?.text = proposal.title
                 cell.detailTextLabel?.text = proposal.user
             }
+            .disposed(by: disposeBag)
+
+        reactor.state.map { $0.isLoading }
+            .subscribe(onNext: {
+                if $0 {
+                    SVProgressHUD.show()
+                } else {
+                    SVProgressHUD.dismiss()
+                }
+            })
             .disposed(by: disposeBag)
     }
 }
