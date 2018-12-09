@@ -69,6 +69,7 @@ PODS:
     - RxSwift (~> 4.0)
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
+  - SVProgressHUD (2.2.5)
   - SwiftFormat/CLI (0.35.9)
   - SwiftLint (0.29.1)
 
@@ -80,6 +81,7 @@ DEPENDENCIES:
   - ReactorKit
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
+  - SVProgressHUD
   - SwiftFormat/CLI
   - SwiftLint
 
@@ -102,6 +104,7 @@ SPEC REPOS:
     - RxAtomic
     - RxCocoa
     - RxSwift
+    - SVProgressHUD
     - SwiftFormat
     - SwiftLint
 
@@ -123,9 +126,10 @@ SPEC CHECKSUMS:
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftFormat: f1cf26ab5ce1f59aeaee018edc7e6d88e05bfb39
   SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
 
-PODFILE CHECKSUM: 8f551854d2b06c7631c9f5faee48295b7d9cf0dd
+PODFILE CHECKSUM: 34f6f2f553a129a3ae7626672eac7b6f8ad04a33
 
 COCOAPODS: 1.5.3
