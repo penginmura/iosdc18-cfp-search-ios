@@ -17,6 +17,9 @@ target 'Konosuba' do
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
 
+  # ReactorKit
+  pod 'ReactorKit'
+
   # Rx
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
