@@ -62,6 +62,8 @@ PODS:
   - R.swift (5.0.0.alpha.2):
     - R.swift.Library (~> 5.0.0.alpha.2)
   - R.swift.Library (5.0.0.alpha.2)
+  - ReactorKit (1.2.1):
+    - RxSwift (>= 4.0.0)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
     - RxSwift (~> 4.0)
@@ -75,6 +77,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - R.swift (= 5.0.0.alpha.2)
+  - ReactorKit
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - SwiftFormat/CLI
@@ -95,6 +98,7 @@ SPEC REPOS:
     - nanopb
     - R.swift
     - R.swift.Library
+    - ReactorKit
     - RxAtomic
     - RxCocoa
     - RxSwift
@@ -115,12 +119,13 @@ SPEC CHECKSUMS:
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   R.swift: 31fa1bd537fa81307815cc622122f33331f32174
   R.swift.Library: 3c21b823839bf5a6769dc7f96cb44479dab51b1b
+  ReactorKit: 8be57f0527ad1ac2963cd5c338274a46a01e57a3
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SwiftFormat: f1cf26ab5ce1f59aeaee018edc7e6d88e05bfb39
   SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
 
-PODFILE CHECKSUM: e93996d410234d8f94a88357dccdfaee36893ab4
+PODFILE CHECKSUM: 8f551854d2b06c7631c9f5faee48295b7d9cf0dd
 
 COCOAPODS: 1.5.3
