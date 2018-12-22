@@ -54,7 +54,7 @@ final class ListViewReactor: Reactor {
     }
 
     func search() -> Observable<[Proposal]> {
-        let url = URL(string: "https://iosdc-cfps.penginmura.tech/api.json")!
+        let url = URL(string: "https://iosdc-cfps.penginmura.tech/api/v1/proposals")!
         return URLSession.shared.rx.data(request: URLRequest(url: url))
             .map { data -> [Proposal] in
                 let proposals = try JSONDecoder().decode(ProposalList.self, from: data)
