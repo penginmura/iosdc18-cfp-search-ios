@@ -20,6 +20,11 @@ final class ListViewController: UIViewController, StoryboardView {
 
     func bind(reactor: ListViewReactor) {
         // Action
+        rx.viewDidAppear
+            .map { Reactor.Action.initialView }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+
         refreshButton.rx.tap
             .map { Reactor.Action.refresh }
             .bind(to: reactor.action)

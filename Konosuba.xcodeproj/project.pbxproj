@@ -10,6 +10,7 @@
 		AF1A623C350A787878C269B6 /* Pods_Konosuba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFE56591A056DB7FDC512A6 /* Pods_Konosuba.framework */; };
 		B44F07F51B25803D04C58F03 /* Pods_KonosubaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D0A8CBF0400A933805588B /* Pods_KonosubaTests.framework */; };
 		E3A015039AC756747FD141A4 /* Pods_KonosubaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6FE842CB6D0BA69A14EEB /* Pods_KonosubaUITests.framework */; };
+		E5394A2F21CE124D00789123 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5394A2E21CE124D00789123 /* UIViewController+Rx.swift */; };
 		E5773FDA21BB9B1300653E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5773FD921BB9B1300653E6B /* AppDelegate.swift */; };
 		E5773FDC21BB9B1300653E6B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5773FDB21BB9B1300653E6B /* ListViewController.swift */; };
 		E5773FDF21BB9B1300653E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5773FDD21BB9B1300653E6B /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		4AFE56591A056DB7FDC512A6 /* Pods_Konosuba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Konosuba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D0A8CBF0400A933805588B /* Pods_KonosubaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KonosubaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03655E0EC120DA64B081509 /* Pods-Konosuba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Konosuba.release.xcconfig"; path = "Pods/Target Support Files/Pods-Konosuba/Pods-Konosuba.release.xcconfig"; sourceTree = "<group>"; };
+		E5394A2E21CE124D00789123 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		E5773FD621BB9B1300653E6B /* Konosuba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konosuba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5773FD921BB9B1300653E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5773FDB21BB9B1300653E6B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				E588606121BD7E6300D4694C /* SVProgressHUD+Rx.swift */,
+				E5394A2E21CE124D00789123 /* UIViewController+Rx.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				E59ECB3B21BBA67400641CAE /* R.generated.swift in Sources */,
 				E5C60CD521BD3D9900A5CBE4 /* ListViewReactor.swift in Sources */,
 				E588606221BD7E6300D4694C /* SVProgressHUD+Rx.swift in Sources */,
+				E5394A2F21CE124D00789123 /* UIViewController+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
