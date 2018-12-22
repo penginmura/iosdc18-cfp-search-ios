@@ -9,6 +9,9 @@
 import RxCocoa
 import RxSwift
 
+// 参考：
+// https://qiita.com/sgr-ksmt/items/e259e00f5c0a2f3109ff
+
 extension Reactive where Base: UIViewController {
     var viewWillAppear: Observable<Void> {
         return sentMessage(#selector(base.viewWillAppear(_:)))
