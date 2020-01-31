@@ -12,6 +12,7 @@ import RxSwift
 
 final class ListViewReactor: Reactor {
     enum Action {
+        case initialView
         case refresh
     }
 
@@ -26,17 +27,19 @@ final class ListViewReactor: Reactor {
     }
 
     let initialState: State
+    let provider: ServiceProviderType
 
-    init() {
+    init(provider: ServiceProviderType) {
         initialState = State(proposals: [], isLoading: false)
+        self.provider = provider
     }
 
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
-        case .refresh:
+        case .initialView, .refresh:
             return Observable.concat([
                 Observable.just(Mutation.setLoading(true)),
-                search().map { Mutation.updateList($0) },
+                provider.proposalService.fetch().map { Mutation.updateList($0) },
                 Observable.just(Mutation.setLoading(false)),
             ])
         }
@@ -51,15 +54,5 @@ final class ListViewReactor: Reactor {
             state.isLoading = loading
         }
         return state
-    }
-
-    func search() -> Observable<[Proposal]> {
-        let url = URL(string: "https://iosdc-cfps.penginmura.tech/api.json")!
-        return URLSession.shared.rx.data(request: URLRequest(url: url))
-            .map { data -> [Proposal] in
-                let proposals = try JSONDecoder().decode(ProposalList.self, from: data)
-                return proposals
-            }
-        // TODO: エラー処理
     }
 }
