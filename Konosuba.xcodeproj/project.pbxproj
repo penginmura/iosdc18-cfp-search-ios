@@ -10,6 +10,9 @@
 		AF1A623C350A787878C269B6 /* Pods_Konosuba.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AFE56591A056DB7FDC512A6 /* Pods_Konosuba.framework */; };
 		B44F07F51B25803D04C58F03 /* Pods_KonosubaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D0A8CBF0400A933805588B /* Pods_KonosubaTests.framework */; };
 		E3A015039AC756747FD141A4 /* Pods_KonosubaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A6FE842CB6D0BA69A14EEB /* Pods_KonosubaUITests.framework */; };
+		E5394A2F21CE124D00789123 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5394A2E21CE124D00789123 /* UIViewController+Rx.swift */; };
+		E5394A3221CE340100789123 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5394A3121CE340100789123 /* ServiceProvider.swift */; };
+		E5394A3421CE347800789123 /* ProposalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5394A3321CE347800789123 /* ProposalService.swift */; };
 		E5773FDA21BB9B1300653E6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5773FD921BB9B1300653E6B /* AppDelegate.swift */; };
 		E5773FDC21BB9B1300653E6B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5773FDB21BB9B1300653E6B /* ListViewController.swift */; };
 		E5773FDF21BB9B1300653E6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5773FDD21BB9B1300653E6B /* Main.storyboard */; };
@@ -17,6 +20,7 @@
 		E5773FE421BB9B1400653E6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5773FE221BB9B1400653E6B /* LaunchScreen.storyboard */; };
 		E5773FEF21BB9B1400653E6B /* KonosubaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5773FEE21BB9B1400653E6B /* KonosubaTests.swift */; };
 		E5773FFA21BB9B1400653E6B /* KonosubaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5773FF921BB9B1400653E6B /* KonosubaUITests.swift */; };
+		E588606221BD7E6300D4694C /* SVProgressHUD+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E588606121BD7E6300D4694C /* SVProgressHUD+Rx.swift */; };
 		E59ECB3B21BBA67400641CAE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59ECB3A21BBA67400641CAE /* R.generated.swift */; };
 		E5C60CD521BD3D9900A5CBE4 /* ListViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C60CD421BD3D9900A5CBE4 /* ListViewReactor.swift */; };
 		E5C60CD821BD430400A5CBE4 /* Proposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C60CD721BD430400A5CBE4 /* Proposal.swift */; };
@@ -47,6 +51,9 @@
 		4AFE56591A056DB7FDC512A6 /* Pods_Konosuba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Konosuba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D0A8CBF0400A933805588B /* Pods_KonosubaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KonosubaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03655E0EC120DA64B081509 /* Pods-Konosuba.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Konosuba.release.xcconfig"; path = "Pods/Target Support Files/Pods-Konosuba/Pods-Konosuba.release.xcconfig"; sourceTree = "<group>"; };
+		E5394A2E21CE124D00789123 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		E5394A3121CE340100789123 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		E5394A3321CE347800789123 /* ProposalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalService.swift; sourceTree = "<group>"; };
 		E5773FD621BB9B1300653E6B /* Konosuba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Konosuba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5773FD921BB9B1300653E6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5773FDB21BB9B1300653E6B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +67,7 @@
 		E5773FF521BB9B1400653E6B /* KonosubaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KonosubaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5773FF921BB9B1400653E6B /* KonosubaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KonosubaUITests.swift; sourceTree = "<group>"; };
 		E5773FFB21BB9B1400653E6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E588606121BD7E6300D4694C /* SVProgressHUD+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+Rx.swift"; sourceTree = "<group>"; };
 		E59ECB3A21BBA67400641CAE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		E5C60CD421BD3D9900A5CBE4 /* ListViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewReactor.swift; sourceTree = "<group>"; };
 		E5C60CD721BD430400A5CBE4 /* Proposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposal.swift; sourceTree = "<group>"; };
@@ -118,6 +126,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E5394A3021CE33D200789123 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E5394A3121CE340100789123 /* ServiceProvider.swift */,
+				E5394A3321CE347800789123 /* ProposalService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		E5773FCD21BB9B1300653E6B = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +161,9 @@
 		E5773FD821BB9B1300653E6B /* Konosuba */ = {
 			isa = PBXGroup;
 			children = (
+				E588606021BD7E3F00D4694C /* Extension */,
 				E5C60CD321BD37AB00A5CBE4 /* View */,
+				E5394A3021CE33D200789123 /* Service */,
 				E5C60CD621BD42F200A5CBE4 /* Entity */,
 				E5773FD921BB9B1300653E6B /* AppDelegate.swift */,
 				E5773FDD21BB9B1300653E6B /* Main.storyboard */,
@@ -171,6 +190,15 @@
 				E5773FFB21BB9B1400653E6B /* Info.plist */,
 			);
 			path = KonosubaUITests;
+			sourceTree = "<group>";
+		};
+		E588606021BD7E3F00D4694C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E588606121BD7E6300D4694C /* SVProgressHUD+Rx.swift */,
+				E5394A2E21CE124D00789123 /* UIViewController+Rx.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		E5C60CD321BD37AB00A5CBE4 /* View */ = {
@@ -382,6 +410,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -396,6 +425,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,7 +526,11 @@
 				E5C60CD821BD430400A5CBE4 /* Proposal.swift in Sources */,
 				E5773FDA21BB9B1300653E6B /* AppDelegate.swift in Sources */,
 				E59ECB3B21BBA67400641CAE /* R.generated.swift in Sources */,
+				E5394A3421CE347800789123 /* ProposalService.swift in Sources */,
+				E5394A3221CE340100789123 /* ServiceProvider.swift in Sources */,
 				E5C60CD521BD3D9900A5CBE4 /* ListViewReactor.swift in Sources */,
+				E588606221BD7E6300D4694C /* SVProgressHUD+Rx.swift in Sources */,
+				E5394A2F21CE124D00789123 /* UIViewController+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

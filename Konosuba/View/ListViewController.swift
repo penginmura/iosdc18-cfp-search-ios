@@ -9,6 +9,7 @@
 import ReactorKit
 import RxCocoa
 import RxSwift
+import SVProgressHUD
 import UIKit
 
 final class ListViewController: UIViewController, StoryboardView {
@@ -19,6 +20,11 @@ final class ListViewController: UIViewController, StoryboardView {
 
     func bind(reactor: ListViewReactor) {
         // Action
+        rx.viewWillAppear
+            .map { Reactor.Action.initialView }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+
         refreshButton.rx.tap
             .map { Reactor.Action.refresh }
             .bind(to: reactor.action)
@@ -30,6 +36,11 @@ final class ListViewController: UIViewController, StoryboardView {
                 cell.textLabel?.text = proposal.title
                 cell.detailTextLabel?.text = proposal.user
             }
+            .disposed(by: disposeBag)
+
+        reactor.state
+            .map { $0.isLoading }
+            .bind(to: SVProgressHUD.rx.visible)
             .disposed(by: disposeBag)
     }
 }
